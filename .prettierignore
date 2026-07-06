@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+dist
+build
+storybook-static
+.turbo
+coverage
+.convex
+pnpm-lock.yaml
+*.md
+packages/config/**

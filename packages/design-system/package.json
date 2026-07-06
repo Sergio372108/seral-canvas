@@ -1,0 +1,22 @@
+{
+  "name": "@geocanvas/ui",
+  "version": "0.0.0",
+  "private": true,
+  "description": "GeoCanvas design system (pending UI UX Pro Max skill installation per PRD 5.0)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist .turbo"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "rimraf": "^6.0.1"
+  }
+}

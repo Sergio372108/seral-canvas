@@ -1,0 +1,28 @@
+{
+  "name": "@geocanvas/config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared tooling configs (ESLint, Tailwind, TypeScript presets) for GeoCanvas",
+  "type": "module",
+  "exports": {
+    "./eslint": {
+      "types": "./eslint/index.d.ts",
+      "default": "./eslint/index.js"
+    },
+    "./tailwind": {
+      "default": "./tailwind/index.js"
+    },
+    "./tsconfig": {
+      "default": "./tsconfig/base.json"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist .turbo"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "rimraf": "^6.0.1"
+  }
+}

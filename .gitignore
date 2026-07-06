@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp.*
+.pnp/
+.pnpm-store/
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+storybook-static/
+.turbo/
+*.tsbuildinfo
+
+# Convex
+.convex/
+convex/_generated/
+
+# Environment (keep examples)
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.*.example
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Misc
+.cache/
+*.local
+.envrc
+
+*storybook.log

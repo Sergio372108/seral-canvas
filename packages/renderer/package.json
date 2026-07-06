@@ -1,0 +1,25 @@
+{
+  "name": "@geocanvas/renderer",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Canvas renderer abstraction + Canvas2D/WebGL2 implementations (ADR-pending benchmark)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "benchmark": "vitest bench",
+    "clean": "rimraf dist .turbo"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8",
+    "rimraf": "^6.0.1"
+  }
+}
